@@ -15,7 +15,7 @@ html, body{
   overflow: hidden;
   position: fixed;
   display: inline;
-  z-index: 100;
+  z-index: 1;
   width: 100%;
 }
 
@@ -48,45 +48,71 @@ li .navRight{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size:cover;
+}
 
-  @media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
-    }
+@media only screen and (max-device-width: 1024px) {
+  .parallax{
+    background-attachment: scroll;
   }
 }
 
 .container {
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 
 .left-half {
-  flex: 1;
+  display: inline-block;
+  width: 50%;
   padding: 1rem;
   background-color: #1D1E18;
   text-align:center;
-  padding-top:20%;
-  font-size: 2rem;
+  padding-top:40vh;
+  font-size: 3vw;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .left-half{
+    font-size:4vw;
+  }
 }
 
 .right-half {
-  flex: 1;
+  display: inline-block;
+  width: 50%;
   padding: 1rem;
   background-color: #40434E;
-  padding-top:20%;
-  padding-left:30px;
+  padding-top:40vh;
+  padding-left:2vw;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .mobileFirst{
+    padding-top:25vh;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .mobileSecond{
+    padding-top:30vh;
+  }
 }
 
 #start{
   position: absolute;
   left: 0;
-  top: 25%;
+  top: 30vh;
   width: 100%;
   text-align: center;
-  font-size: 8rem;
-  text-shadow: 2px 2px 15px black;
+  font-size: 10vw;
+  text-shadow: 2px 2px 15px #000;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  #start{
+    font-size:18vw;
+  }
 }
 
 .body-links a:link{
