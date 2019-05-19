@@ -1,0 +1,99 @@
+html, body{
+  font-family: Avenir, 'Lato', sans-serif;
+  scroll-behavior: smooth;
+  height:100%;
+  background-color: #1D1E18;
+  color: #FFF;
+  margin:0;
+}
+
+#navbar{
+  background-color:#1D1E18;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  display: inline;
+  z-index: 100;
+  width: 100%;
+}
+
+#navbar li a{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: #FFF;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+#navbar li a:hover{
+  color:#BBB;
+}
+
+li .navLeft{
+  float: left;
+}
+
+li .navRight{
+  float: right;
+}
+
+.parallax{
+  background-image: url(night-min.jpg);
+  height: 100%;
+  padding: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:100%;
+
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-half {
+  flex: 1;
+  padding: 1rem;
+  background-color: #1D1E18;
+  text-align:center;
+  padding-top:20%;
+  font-size: 2rem;
+}
+
+.right-half {
+  flex: 1;
+  padding: 1rem;
+  background-color: #40434E;
+  padding-top:20%;
+  padding-left:30px;
+}
+
+#start{
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 8rem;
+  text-shadow: 2px 2px 15px black;
+}
+
+.body-links a:link{
+  color: #BBB;
+  text-decoration:none;
+}
+
+.body-links a:visited{
+  color: #FFF;
+}
